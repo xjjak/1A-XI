@@ -1,0 +1,36 @@
+<svg width="1000" height="1300" shape-rendering="crispEdges">
+
+  <!-- masks -->
+  <defs>
+    <mask id="cie-1">
+      <rect width="100%" height="100%" fill="white"/>
+      <rect x="40"  y="160"  rx="100" ry="100" width="920" height="980" style="fill:rgb(0,0,0);" />
+    </mask>
+    <mask id="cie-2">
+      <rect width="100%" height="100%" fill="white"/>
+      <rect x="240"  y="160"  rx="100" ry="100" width="520" height="410" style="fill:rgb(0,0,0);" />
+      <rect x="240"  y="730"  rx="100" ry="100" width="520" height="410" style="fill:rgb(0,0,0);" />
+    </mask>
+  </defs>
+  
+  <!-- Upper and lower rectangles -->
+  <rect x="0"    y="0"    rx="10" ry="10" width="1000" height="160" style="fill:rgb(0,0,0);" />
+  <rect x="0"    y="1140" rx="10" ry="10" width="1000" height="160" style="fill:rgb(0,0,0);" />
+
+  <!-- Rectangles for vertical lines (upper and lower) -->
+  <rect x="0"    y="0"    rx="10" ry="10" width="160"  height="320" style="fill:rgb(0,0,0);" mask="url(#cie-1)" /> 
+  <rect x="840"  y="0"    rx="10" ry="10" width="160"  height="320" style="fill:rgb(0,0,0);" mask="url(#cie-1)" /> 
+  <rect x="0"    y="980"  rx="10" ry="10" width="160"  height="320" style="fill:rgb(0,0,0);" mask="url(#cie-1)" /> 
+  <rect x="840"  y="980"  rx="10" ry="10" width="160"  height="320" style="fill:rgb(0,0,0);" mask="url(#cie-1)" /> 
+
+  <!-- Rectangle for inner rounded corners (upper and lower) -->
+  <!-- <rect x="40"  y="160"  rx="100" ry="100" width="920" height="980" style="fill:rgb(255,255,255);" /> -->
+  
+  <!-- Middle rectangle -->
+  <rect x="200"  y="570"  rx="10" ry="10" width="600"  height="160" style="fill:rgb(0,0,0);" />
+
+  <!-- Rectangles for vertical lines (middle) -->
+  <rect x="200"  y="410"  rx="10" ry="10" width="160"  height="480" style="fill:rgb(0,0,0);" mask="url(#cie-2)"/>
+  <rect x="640"  y="410"  rx="10" ry="10" width="160"  height="480" style="fill:rgb(0,0,0);" mask="url(#cie-2)"/>
+  
+</svg> 
